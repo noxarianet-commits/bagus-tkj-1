@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Modern Bagus Irfan Muslim</title>
+    <!-- TailwindCSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for sleek icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS for stunning scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'blue-900': '#1e3a8a',
+                        'cyan-500': '#06b6d4',
+                        'gray-900': '#111827'
+                    },
+                    animation: {
+                        'bounce-in': 'bounce 1s ease-in-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #111827 0%, #1e3a8a 50%, #06b6d4 100%);
+            color: #f3f4f6;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background: radial-gradient(circle, rgba(6,182,212,0.4) 0%, rgba(30,58,138,0.8) 100%);
+            min-height: 100vh;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar with glassmorphism effect -->
+    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-500 hover:text-white transition-colors"><i class="fas fa-user-circle mr-2"></i>Bagus Irfan Muslim</h1>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="text-white hover:text-cyan-500 transition-colors"><i class="fas fa-info-circle mr-1"></i>Tentang Saya</a></li>
+                <li><a href="#hobby" class="text-white hover:text-cyan-500 transition-colors"><i class="fas fa-swimmer mr-1"></i>Hobi</a></li>
+                <li><a href="#aspirations" class="text-white hover:text-cyan-500 transition-colors"><i class="fas fa-fire mr-1"></i>Impian & Cita-Cita</a></li>
+                <li><a href="#contact" class="text-white hover:text-cyan-500 transition-colors"><i class="fas fa-envelope mr-1"></i>Kontak</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-white"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 hidden">
+            <li><a href="#about" class="block px-6 py-2 text-white hover:text-cyan-500">Tentang Saya</a></li>
+            <li><a href="#hobby" class="block px-6 py-2 text-white hover:text-cyan-500">Hobi</a></li>
+            <li><a href="#aspirations" class="block px-6 py-2 text-white hover:text-cyan-500">Impian & Cita-Cita</a></li>
+            <li><a href="#contact" class="block px-6 py-2 text-white hover:text-cyan-500">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Typing Effect -->
+    <section class="hero-bg flex items-center justify-center text-center relative overflow-hidden">
+        <div data-aos="fade-up" data-aos-delay="300">
+            <div class="animate-pulse relative">
+                <img src="WhatsApp Image 2025-09-04 at 19.41.25.jpeg" alt="A modern, sleek 3D-rendered avatar of a 16-year-old Indonesian male with short wavy hair, wearing a casual blue hoodie and holding a virtual laptop, standing in a futuristic cyber-themed background with glowing cyan lights and subtle particle effects" class="rounded-full shadow-2xl max-w-full" data-aos="zoom-in" data-aos-delay="500">
+            </div>
+            <h2 id="typewriter" class="text-5xl md:text-7xl font-extrabold text-white mt-8 tracking-wider"></h2>
+            <p class="text-xl md:text-2xl text-cyan-300 mt-4" data-aos="fade-left" data-aos-delay="600">Pelajar yang passion dengan Teknologi & Renang</p>
+            <button class="mt-8 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" data-aos="bounce-in" data-aos-delay="700" onclick="scrollToSection('#about')">Jelajahi Portofolio</button>
+        </div>
+        <!-- Background Particles (Simple CSS) -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="particle" style="left:10%; top:20%; animation-delay:0s;"></div>
+            <div class="particle" style="left:20%; top:70%; animation-delay:2s;"></div>
+            <div class="particle" style="left:80%; top:40%; animation-delay:4s;"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="slide-left">
+                    <h3 class="text-4xl font-bold mb-4"><i class="fas fa-user-astronaut mr-2 text-cyan-500"></i>Tentang Saya</h3>
+                    <p class="text-lg mb-6">
+                        Halo nama saya Bagus Irfan Muslim, seorang pelajar berusia 16 tahun yang cinta tantangan baru. Saya suka eksplorasi dunia digital dan senang membantu orang lain dengan pengetahuan saya tentang teknologi. Dengan motivasi tinggi, saya berusaha untuk jadi seseorang yang bermanfaat untuk komunitas saya.
+                    </p>
+                    <div class="flex items-center mb-4" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-calendar-alt text-cyan-500 mr-3"></i>
+                        <span>Umur: 16 Tahun</span>
+                    </div>
+                    <div class="flex items-center" data-aos="fade-left" data-aos-delay="400">
+                        <i class="fas fa-graduation-cap text-cyan-500 mr-3"></i>
+                        <span>Status: Pelajar</span>
+                    </div>
+                </div>
+                <div data-aos="slide-right">
+                    <div class="card-hover bg-gradient-to-br from-blue-900 to-cyan-500 p-8 rounded-3xl shadow-2xl">
+                        <img src="WhatsApp Image 2025-09-04 at 19.41.25.jpeg" alt="A vibrant digital avatar of Bagus Irfan Muslim, a 16-year-old Indonesian student boy with a bright smile, wearing glasses and a white shirt, posed confidently in front of a computer screen displaying code in a cozy home office setup with books and tech gadgets" class="w-full rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobby Section -->
+    <section id="hobby" class="section-padding bg-gradient-to-r from-cyan-800 to-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="zoom-in">
+                <h3 class="text-4xl font-bold"><i class="fas fa-swimmer mr-2 text-cyan-300"></i>Hobi Saya</h3>
+                <p class="text-lg text-cyan-200 mt-2">Renang, Passion yang Mencerahkan Hari Saya</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-hover p-8 rounded-3xl shadow-2xl bg-white bg-opacity-10">
+                        <img src="images.jpeg" alt="A high-energy action shot of a young swimmer diving into a sparkling turquoise pool, with water droplets splashing in slow-motion, surrounded by palm trees and clear sky in a premium Olympic-style swimming complex" class="w-full rounded-2xl shadow-lg">
+                        <p class="text-lg mt-6">
+                            Renang adalah hobi favorit saya karena memberikan energi, ketenangan, dan tantangan untuk terus berkembang. Setiap kali masuk ke kolam, saya merasa bebas dan siap menghadapi hari-hari penuh kegiatan belajar.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="flip-right" data-aos-delay="400">
+                    <div class="flex flex-col space-y-4">
+                        <div class="bg-white bg-opacity-20 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-water text-3xl text-cyan-500 mb-2"></i>
+                            <h4 class="text-xl font-semibold">Sensasi Air</h4>
+                            <p>Membuat hari-hari lebih segar dan energik.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="600">
+                            <i class="fas fa-clock text-3xl text-cyan-500 mb-2"></i>
+                            <h4 class="text-xl font-semibold">Waktu Luang</h4>
+                            <p>Relaksasi dari rutinitas sekolah.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="700">
+                            <i class="fas fa-trophy text-3xl text-cyan-500 mb-2"></i>
+                            <h4 class="text-xl font-semibold">Tantangan</h4>
+                            <p>Mendorong diri untuk selalu lebih baik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aspirations Section -->
+    <section id="aspirations" class="section-padding bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center" data-aos="fade-up">
+                <h3 class="text-4xl font-bold mb-8"><i class="fas fa-star mr-2 text-cyan-500"></i>Impian & Cita-Cita</h3>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-20 rounded-full blur-3xl"></div>
+                    <div class="relative bg-white bg-opacity-10 p-12 rounded-3xl shadow-2xl" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-heart text-5xl text-cyan-500 mb-4"></i>
+                        <p class="text-2xl mb-6">"Impian saya adalah membahagiakan orang tua dengan pencapaian saya, mulai dari pengalaman renang hingga kesuksesan dalam bidang teknologi."</p>
+                        <p class="text-xl font-bold text-cyan-300 mt-4">Cita-Cita: Menjadi Teknisi IT Handal</p>
+                        <p class="text-lg mt-2">Saya ingin berkontribusi di dunia IT dengan memperbaiki dan mengoptimalkan teknologi untuk orang-orang.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gradient-to-t from-gray-900 to-black text-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8" data-aos="slide-up"><i class="fas fa-phone-alt mr-2 text-cyan-500"></i>Kontak</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12" data-aos="fade-right" data-aos-delay="300">
+                <div class="text-center">
+                    <i class="fas fa-envelope text-4xl text-cyan-500 mb-2"></i>
+                    <p class="text-lg">Email: bagusirfan@example.com</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-mobile-alt text-4xl text-cyan-500 mb-2"></i>
+                    <p class="text-lg">WhatsApp: 0857-4253-4858</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-cyan-500 py-8 text-center">
+        <p>&copy; 2025 Bagus Irfan Muslim. Design By ANDIKA Noxarianet.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Typewriter Effect
+        const text = "Bagus Irfan Muslim";
+        let i = 0;
+        const speed = 150;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                // Add blinking cursor effect
+                document.getElementById("typewriter").insertAdjacentHTML('beforeend', '<span class="animate-blink">_</span>');
+            }
+        }
+        window.addEventListener('load', typeWriter);
+
+        // Smooth Scroll Function
+        function scrollToSection(selector) {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // AOS Initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        });
+    </script>
+
+    <!-- Particle Animation CSS -->
+    <style>
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(6, 182, 212, 0.5);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); opacity: 0; }
+            50% { transform: translateY(-20px); opacity: 1; }
+        }
+        .animate-blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 0; }
+            51%, 100% { opacity: 1; }
+        }
+    </style>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
+</content>
+</create_file>
